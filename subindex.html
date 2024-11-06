@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="ready" style="overflow: visible; height: 100%;">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ing</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="jquery-plugin, ecosystem:jquery, jquery, javascript, scrolling, smooth,
+        single_page, onepage, fullpage, fullview, one_page, sliding, scroll, swipe, mousewheel, sections" />
+    <meta name="description"
+        content="Create Amazing full-screen full page Scrolling websites fast and easy - A simple and easy to use library." />
+
+    
+    <!-- Custom StyleSheet 
+    <link rel="stylesheet" href="./css/theme.css"> //-->
+
+    <style>
+
+
+.Steps {width: 80%;padding: 0px;margin: 60px auto;}
+.Steps ul, .Steps li {margin: 0;padding: 0;list-style: none;}
+.Steps ul {display: table;width: 100%;}
+.Steps li {display: table-cell;width: 25%;position: relative;text-align: center;}
+.Steps li:first-child:before { text-align: left; height: 2px;width: 100%;left:50%; display: block;background-color: #eee;}
+.Steps li:last-child:before { text-align: left; height: 2px;width: 50%;display: block;background-color: #eee;}
+
+/* 캔버스 */
+.canvas {background-color: #ffffff;}
+.canvas_wrap {    position: relative;  display: inline-block;}
+.Steps li:before {height: 2px;display: block;background-color: #eee;position: absolute;content: "";border-radius: 5px;right: 0px;left: 0px;top: 50%; width: 100%;}
+.Steps li:after {display: block;transform: translate(-42px, 10px);color: #818698;font-weight: 400;font-size: 13px;position: absolute;left:0px;top:0;}
+
+.canvas_wrap .percent, .canvas_wrap_end .percent {display: block; margin-top:-4px; position: absolute;top: 50%;left: 50%;font-size: 16px;color: #3949AB;transform: translate(-50%, -50%);}
+.canvas_wrap .percent::after, .canvas_wrap_end .percent::after {    content: '%';}
+.canvas_wrap canvas, .canvas_wrap_end canvas {    width: 100%;    height: 100%;}
+
+.canvas_text {position: absolute; top:16px; left:90px;width: 140px; }
+.canvas_text .tit {display: block; font-size:16px; font-weight: bold;text-align: left;margin-bottom:10px;}
+.canvas_text .info {display: block; font-size:12px;text-align: left;}
+
+    </style>
+   
+
+</head>
+
+<body>
+
+    <div class="Steps">
+        <ul>
+            <li>
+                <div class="canvas_wrap"  data-desc="">
+                    <canvas class="canvas" width="80" height="80" data-percent="100"></canvas>
+                    <span class="percent"></span>
+                    <div class="canvas_text">
+                        <span class="tit">기본 정보 입력</span>
+                        <span class="info">김길동 24.10.09.01 13:09</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="canvas_wrap"  data-desc="">
+                    <canvas class="canvas" width="80" height="80" data-percent="75"></canvas>
+                    <span class="percent"></span>
+                    <div class="canvas_text">
+                        <span class="tit">시험 조건 입력</span>
+                        <span class="info">김길동 24.08.18.01 13:09</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="canvas_wrap"  data-desc="">
+                    <canvas class="canvas" width="80" height="80" data-percent="18"></canvas>
+                    <span class="percent"></span>
+                    <div class="canvas_text">
+                        <span class="tit">장비 / 채널 예약</span>
+                        <span class="info">김길동 작성중</span>
+                    </div>
+                </div>
+            </li>
+            <li><!--<div class="step" data-desc="Validation">4</div>//-->
+                <div class="canvas_wrap"  data-desc="">
+                    <canvas class="canvas" width="80" height="80" data-percent="0"></canvas>
+                    <span class="percent"></span>
+                    <div class="canvas_text">
+                        <span class="tit">승인 요청</span>
+                        <span class="info"></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+ 
+
+
+
+
+
+
+
+
+
+    <!-- progress bar  -->
+    <script type="text/javascript" src="../js/jquery-2.3.1.min.js"></script>   
+    <script type="text/javascript" src="../js/banner.js"></script>
+</body>
+
+</html>
