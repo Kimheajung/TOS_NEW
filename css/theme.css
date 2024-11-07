@@ -65,7 +65,7 @@ body {
     z-index: 1;
     cursor: pointer;
     text-decoration: none;
-    background-color: #2D9BB2;
+    background-color: #bdbdbd;
     margin: 0 auto;
     width: 9px;
     height: 60px;
@@ -74,7 +74,7 @@ body {
 #fv-dots ul a.active span {
     width: 9px;
     height: 60px;
-    background-color: #bdbdbd;
+    background-color: #2D9BB2;
 }
 #fv-dots ul a:hover span {
     width: 9px;
