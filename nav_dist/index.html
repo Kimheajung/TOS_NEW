@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - navbar &amp; sidebar</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div data-component="navbar">
+
+<nav class="navbar p-0 fixed-top">
+     
+  
+  <div>
+    
+    <div class="right-links float-right mr-4">
+
+      <div class="d-inline dropdown">
+        <a class="dropdown-toggle" id="messages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+          <img src="http://1.gravatar.com/avatar/47db31bd2e0b161008607d84c74305b5?s=96&d=mm&r=g">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right rounded-0" aria-labelledby="messages">
+          <a class="dropdown-item" href="#">Edit my profile</a>
+          <a class="dropdown-item" href="#">Log Out</a>
+        </div> <!-- /.dropdown-menu -->
+      </div> <!-- /.dropdown -->
+
+      <div class="d-inline">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#megamenu-dropdown" 
+        aria-controls="megamenu-dropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div> <!-- /.dropdown -->
+      
+    </div> <!-- /.right-links -->
+  
+  </div>
+  
+
+  
+  <div class="megamenu">
+        <div class="collapse navbar-collapse" id="megamenu-dropdown">
+        <div class="megamenu-links">
+      <div class="row">
+        <div class="col-md-3 px-0">
+          <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3 pl-5" data-toggle="collapse" href="#menuOne" aria-expanded="false" aria-controls="collapseExample" id="more">Slider Revolution
+            <i class="fa fa-minus float-right" aria-hidden="true"></i>
+            <i class="fa fa-plus float-right" aria-hidden="true"></i>
+          </a> <!-- button close -->
+          <div class="collapse" id="menuOne">
+            <div class="list-group border-0">
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Slider Revolution</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Navigation Editor</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Add-Ons</a>
+            </div> <!-- /.list-group -->
+          </div><!-- /.collapse -->
+        </div> <!-- /.col-md-3 -->
+        
+        <div class="col-md-3 px-0">
+          <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3" data-toggle="collapse" href="#menuTwo" aria-expanded="false" aria-controls="collapseExample" id="more">Flyouts
+            <i class="fa fa-minus float-right" aria-hidden="true"></i>
+            <i class="fa fa-plus float-right" aria-hidden="true"></i>
+          </a> <!-- button close -->
+          <div class="collapse" id="menuTwo">
+            <div class="list-group border-0">
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">All Flyouts</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Add new Flyout</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Re-Order</a>
+            </div> <!-- /.list-group -->
+          </div><!-- /.collapse -->
+        </div> <!-- /.col-md-3 -->
+        <div class="col-md-3 px-0">
+          <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3" data-toggle="collapse" href="#menuThree" aria-expanded="false" aria-controls="collapseExample" id="more">Cornerstone 
+            <i class="fa fa-minus float-right" aria-hidden="true"></i>
+            <i class="fa fa-plus float-right" aria-hidden="true"></i>
+          </a> <!-- button close -->
+          <div class="collapse" id="menuThree">
+            <div class="list-group border-0">
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Cornerstone</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Cornerstone</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Cornerstone</a>
+            </div> <!-- /.list-group -->
+          </div><!-- /.collapse -->
+        </div> <!-- /.col-md-3 -->
+      </div> <!-- /.row -->
+          <div class="row">
+            <div class="col-md-3 px-0">
+          <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3 pl-5" data-toggle="collapse" href="#menuFour" aria-expanded="false" aria-controls="collapseExample" id="more">Ess. Grid
+            <i class="fa fa-minus float-right" aria-hidden="true"></i>
+            <i class="fa fa-plus float-right" aria-hidden="true"></i>
+          </a> <!-- button close -->
+          <div class="collapse" id="menuFour">
+            <div class="list-group border-0">
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Essential Grid</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Item Skin Editor</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Meta Data Handling</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Search Settings</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Global Settings</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Import/Export</a>
+            </div> <!-- /.list-group -->
+          </div><!-- /.collapse -->
+        </div> <!-- /.col-md-3 -->
+            <div class="col-md-3 px-0">
+          <a class="btn rounded-0 border-0 d-flex w-100 justify-content-between p-3" data-toggle="collapse" href="#menuFive" aria-expanded="false" aria-controls="collapseExample" id="more">AgentFire CTA Plus
+            <i class="fa fa-minus float-right" aria-hidden="true"></i>
+            <i class="fa fa-plus float-right" aria-hidden="true"></i>
+          </a> <!-- button close -->
+          <div class="collapse" id="menuFive">
+            <div class="list-group border-0">
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Essential Grid</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Item Skin Editor</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Meta Data Handling</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Search Settings</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Global Settings</a>
+              <a href="#" class="list-group-item list-group-item-action border-0 pl-4 py-3">Import/Export</a>
+            </div> <!-- /.list-group -->
+          </div><!-- /.collapse -->
+        </div> <!-- /.col-md-3 -->
+          </div>
+    </div> <!-- /.megamenu-links -->
+      </div></div>
+</nav>
+</div> <!-- END TOP NAVBAR -->
+
+
+
+
+
+<div class="wp-content">
+  <div class="container-fluid">
+    CONTENT GOES HERE
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+
+</body>
+</html>
