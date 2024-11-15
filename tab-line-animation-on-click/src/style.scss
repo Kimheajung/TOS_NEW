@@ -1,0 +1,45 @@
+.tab{
+	display: flex;
+	font-family: "Roboto";
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 25px auto;
+	.tab-item{
+		flex: 1;
+		cursor: pointer;
+		text-align: center;
+		padding: 15px 25px;
+		background-color: #eee;
+	}
+}
+.line{
+	width: 0;
+	height: 5px;
+	background-color: #ffb86c;
+	position: fixed;
+	transition: all .25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	
+}
+.line.left {
+	animation: left 0.5s 1 ease;
+}
+.line.right {
+	animation: right 0.5s 1 ease;
+}
+@keyframes left {
+	50% {
+		transform: translateX(-25px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes right {
+	50% {
+		transform: translateX(25px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
